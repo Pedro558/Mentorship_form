@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Mentorship form</title>
+</head>
+
+<body>
+  
+    <header>
+      <div class="head-sect">
+        <h1>RATE YOUR MENTORSHIP</h1>
+        <p>It's time to rate your mentor. Let's do it ?</p>
+        <img src="images/review.svg" alt="review image with rating stars" id="my-img">
+      </div>
+  
+      <div class="top-box">
+        Personal info
+      </div>
+    </header>
+  
+
+  <form>
+    <div class="form-wrapper">
+
+      <fieldset>
+        <div class="fieldset-wrapper">
+
+          <div class="name-columns">
+            <div class="input-wrapper">
+              <label for="person-name">Name</label>
+              <input type="text" id="person-name">
+            </div>
+  
+            <div class="input-wrapper">
+              <label for="person-surname">Surname</label>
+              <input type="text" id="person-surname">
+            </div>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="person-email">Email<span>(digit a valid email)</span></label>
+            <input type="email" id="person-email" required>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>MENTOR INFO</legend>
+
+          <div class="input-wrapper">
+            <label for="mentor-name">Select who was your mentor</label>
+            <select id="mentor-name">
+              <option value="mayk">Mayk Brito</option>
+              <option value="diego-ceo">Diego Fernandes</option>
+              <option value="capitao">Guilherme Capitão</option>
+            </select>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="feedback">Mentor's feedback</label>
+            <textarea id="feedback" maxlength="550"></textarea>
+          </div>
+
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">All my doubts were claryfied during the mentorship.</label>
+          </div>
+        </div>
+      </fieldset>
+      
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>SCHEDULING NEXT MENTORSHIP</legend>
+
+          <div class="data-columns">
+            <div class="input-wrapper">
+              <label for="next-date">Date<span>(DD/MM/YYYY)</span></label>
+              <input type="date" id="next-date">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="next-date-from">From</label>
+              <input type="time" id="next-date-from">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="next-date-to">To</label>
+              <input type="time" id="next-date-to">
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+    </div>
+
+    <footer>
+      <button class="form-button">SAVE</button>
+    </footer>
+
+  </form>
+</body>
+</html>
